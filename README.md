@@ -83,6 +83,10 @@ classic-arcade-games/
 
 This project is open source and available for personal and educational use.
 
+## 🤖 Development
+
+These games were generated using **GitHub Copilot** with **Claude Sonnet 4.5** as the AI coding assistant in VS Code. The entire project showcases the power of AI-assisted development in creating interactive web applications.
+
 ## 👨‍💻 Author
 
 Created with ❤️ for retro gaming enthusiasts

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>🐍 SNAKE</h1>
+      <div class="score-panel">
+        <div class="score">Skóre: <span id="score">0</span></div>
+        <div class="high-score">Rekord: <span id="highScore">0</span></div>
+      </div>
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      <div class="controls">
+        <p>Ovládání: šipky ← ↑ → ↓ nebo WASD</p>
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn" disabled>Pauza</button>
+      </div>
+      <div class="difficulty">
+        <label>Obtížnost:</label>
+        <select id="difficulty">
+          <option value="easy">Lehká</option>
+          <option value="medium" selected>Střední</option>
+          <option value="hard">Těžká</option>
+          <option value="extreme">Extrémní</option>
+        </select>
+      </div>
+      <div id="gameOver" class="game-over hidden">
+        <h2>GAME OVER</h2>
+        <p>Finální skóre: <span id="finalScore">0</span></p>
+        <button id="restartBtn">Hrát znovu</button>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>

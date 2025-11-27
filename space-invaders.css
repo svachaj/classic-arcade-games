@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", monospace;
+  background: linear-gradient(to bottom, #000428, #004e92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+}
+
+.game-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #00ff00;
+}
+
+.score,
+.lives,
+.level {
+  display: flex;
+  gap: 10px;
+}
+
+#score,
+#lives,
+#level {
+  color: #00ff00;
+}
+
+canvas {
+  background: #000;
+  border: 3px solid #00ff00;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+}
+
+.game-over {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.95);
+  padding: 40px;
+  border-radius: 15px;
+  border: 3px solid #ff0000;
+  z-index: 100;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+}
+
+.game-over h2 {
+  color: #ff0000;
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+.game-over p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+#restartBtn {
+  background: #00ff00;
+  color: #000;
+  border: none;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Courier New", monospace;
+  transition: all 0.3s;
+}
+
+#restartBtn:hover {
+  background: #00cc00;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+}
+
+.hidden {
+  display: none;
+}
+
+.instructions {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #aaa;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.instructions p {
+  margin: 0;
+}

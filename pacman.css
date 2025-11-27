@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #000000 0%, #434368 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.game-container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(255, 255, 0, 0.3);
+}
+
+h1 {
+  font-size: 3em;
+  color: #ffff00;
+  text-shadow: 0 0 10px #ffff00, 0 0 20px #ffff00;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+}
+
+.score-panel {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.score {
+  color: #00ff00;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+.lives {
+  color: #ff0000;
+  text-shadow: 0 0 5px #ff0000;
+}
+
+#gameCanvas {
+  border: 3px solid #0066ff;
+  background: #000;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 102, 255, 0.5);
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls p {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #aaa;
+}
+
+button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1em;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  font-weight: bold;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.95);
+  padding: 40px;
+  border-radius: 15px;
+  border: 3px solid #ff0000;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+}
+
+.game-over h2 {
+  color: #ff0000;
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ff0000;
+}
+
+.game-over p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}

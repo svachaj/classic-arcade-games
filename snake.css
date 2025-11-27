@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.game-container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 255, 127, 0.3);
+}
+
+h1 {
+  font-size: 3.5em;
+  color: #00ff7f;
+  text-shadow: 0 0 20px #00ff7f, 0 0 40px #00ff7f;
+  margin-bottom: 20px;
+  letter-spacing: 10px;
+}
+
+.score-panel {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.score {
+  color: #00ff7f;
+  text-shadow: 0 0 10px #00ff7f;
+}
+
+.high-score {
+  color: #ffd700;
+  text-shadow: 0 0 10px #ffd700;
+}
+
+#gameCanvas {
+  border: 4px solid #00ff7f;
+  background: #001a0d;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 30px rgba(0, 255, 127, 0.5), inset 0 0 20px rgba(0, 255, 127, 0.1);
+  border-radius: 10px;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #aaa;
+}
+
+button {
+  background: linear-gradient(135deg, #00ff7f 0%, #00cc66 100%);
+  color: #000;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1em;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 255, 127, 0.4);
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 255, 127, 0.6);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.difficulty {
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+.difficulty label {
+  margin-right: 10px;
+  color: #aaa;
+}
+
+.difficulty select {
+  background: rgba(0, 255, 127, 0.2);
+  color: #fff;
+  border: 2px solid #00ff7f;
+  padding: 8px 15px;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+}
+
+.difficulty select:hover {
+  background: rgba(0, 255, 127, 0.3);
+}
+
+.game-over {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.95);
+  padding: 50px;
+  border-radius: 20px;
+  border: 4px solid #ff0000;
+  box-shadow: 0 0 50px rgba(255, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.game-over h2 {
+  color: #ff0000;
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  text-shadow: 0 0 20px #ff0000;
+}
+
+.game-over p {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  color: #00ff7f;
+}
+
+.hidden {
+  display: none;
+}

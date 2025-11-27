@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris</title>
+    <link rel="stylesheet" href="tetris.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="game-header">
+        <h1>TETRIS</h1>
+      </div>
+      <div class="game-content">
+        <div class="side-panel left-panel">
+          <div class="info-box">
+            <h3>Skóre</h3>
+            <div id="score" class="value">0</div>
+          </div>
+          <div class="info-box">
+            <h3>Řádky</h3>
+            <div id="lines" class="value">0</div>
+          </div>
+          <div class="info-box">
+            <h3>Level</h3>
+            <div id="level" class="value">1</div>
+          </div>
+        </div>
+        <div class="game-area">
+          <canvas id="gameCanvas"></canvas>
+          <div id="gameOver" class="game-over hidden">
+            <h2>GAME OVER</h2>
+            <p>Skóre: <span id="finalScore">0</span></p>
+            <p>Řádky: <span id="finalLines">0</span></p>
+            <button id="restartBtn">Hrát znovu</button>
+          </div>
+        </div>
+        <div class="side-panel right-panel">
+          <div class="info-box">
+            <h3>Další</h3>
+            <canvas id="nextCanvas"></canvas>
+          </div>
+          <div class="controls-info">
+            <h3>Ovládání</h3>
+            <p>⬅️ ➡️ Pohyb</p>
+            <p>⬇️ Zrychlení</p>
+            <p>⬆️ Rotace</p>
+            <p>MEZERNÍK Pád</p>
+            <p>P Pauza</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="tetris.js"></script>
+  </body>
+</html>

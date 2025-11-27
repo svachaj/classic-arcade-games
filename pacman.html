@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pac-Man</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>PAC-MAN</h1>
+      <div class="score-panel">
+        <div class="score">Skóre: <span id="score">0</span></div>
+        <div class="lives">Životy: <span id="lives">9</span></div>
+      </div>
+      <canvas id="gameCanvas" width="560" height="620"></canvas>
+      <div class="controls">
+        <p>Ovládání: šipky ← ↑ → ↓</p>
+        <button id="startBtn">Start / Restart</button>
+      </div>
+      <div id="gameOver" class="game-over hidden">
+        <h2>GAME OVER</h2>
+        <p>Finální skóre: <span id="finalScore">0</span></p>
+        <button id="restartBtn">Hrát znovu</button>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>

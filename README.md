@@ -5,15 +5,19 @@ A collection of classic arcade games built with HTML, CSS, and JavaScript. Play 
 ## 🕹️ Games Included
 
 ### 👻 Pac-Man
+
 Navigate the maze, eat dots, and avoid ghosts in this iconic arcade classic.
 
 ### 🐍 Snake
+
 Guide the snake to eat food and grow longer without hitting walls or yourself.
 
 ### 👾 Space Invaders
+
 Defend Earth from waves of alien invaders in this legendary shooter game.
 
 ### 🟦 Tetris
+
 Stack falling blocks to clear lines in this addictive puzzle game.
 
 ## 🚀 Play Now
@@ -23,12 +27,14 @@ Visit the live site: **[Play Games](https://svachaj.github.io/classic-arcade-gam
 ## 💻 Local Development
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/svachaj/classic-arcade-games.git
 cd classic-arcade-games
 ```
 
 2. Open `index.html` in your browser or use a local server:
+
 ```bash
 # Using Python
 python -m http.server 8000

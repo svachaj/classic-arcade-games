@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,28 +10,28 @@
     <div class="game-container">
       <h1>🐍 SNAKE</h1>
       <div class="score-panel">
-        <div class="score">Skóre: <span id="score">0</span></div>
-        <div class="high-score">Rekord: <span id="highScore">0</span></div>
+        <div class="score">Score: <span id="score">0</span></div>
+        <div class="high-score">High Score: <span id="highScore">0</span></div>
       </div>
       <canvas id="gameCanvas" width="400" height="400"></canvas>
       <div class="controls">
-        <p>Ovládání: šipky ← ↑ → ↓ nebo WASD</p>
+        <p>Controls: Arrow keys ← ↑ → ↓ or WASD</p>
         <button id="startBtn">Start</button>
-        <button id="pauseBtn" disabled>Pauza</button>
+        <button id="pauseBtn" disabled>Pause</button>
       </div>
       <div class="difficulty">
-        <label>Obtížnost:</label>
+        <label>Difficulty:</label>
         <select id="difficulty">
-          <option value="easy">Lehká</option>
-          <option value="medium" selected>Střední</option>
-          <option value="hard">Těžká</option>
-          <option value="extreme">Extrémní</option>
+          <option value="easy">Easy</option>
+          <option value="medium" selected>Medium</option>
+          <option value="hard">Hard</option>
+          <option value="extreme">Extreme</option>
         </select>
       </div>
       <div id="gameOver" class="game-over hidden">
         <h2>GAME OVER</h2>
-        <p>Finální skóre: <span id="finalScore">0</span></p>
-        <button id="restartBtn">Hrát znovu</button>
+        <p>Final Score: <span id="finalScore">0</span></p>
+        <button id="restartBtn">Play Again</button>
       </div>
     </div>
     <script src="snake.js"></script>
